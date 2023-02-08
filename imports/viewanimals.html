@@ -1,0 +1,10 @@
+<template name="viewanimals">
+    {{#each animals}}
+    <p class="fs-1">
+    {{name}}
+        {{species}}
+        <i class="fa-sharp fa-solid fa-pen-to-square js-edit"></i>
+        <i class="fa-solid fa-trash js-delete"></i>
+    </p>
+    {{/each}}
+</template>
