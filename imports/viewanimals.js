@@ -1,6 +1,6 @@
 Template.viewanimals.helpers({
     animals() {
-        return farmdb.find()
+        return Animals.find()
     }
 })
 
@@ -17,6 +17,6 @@ Template.viewanimals.events({
     },
     'click .js-delete'(){
         console.log('deleting',this._id)
-        farmdb.remove({"_id":this._id})
+        Animals.remove({"_id":this._id})
     }
 })

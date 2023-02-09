@@ -4,7 +4,7 @@ Template.addAnimal.events({
         let name = document.querySelector('.addanimalName').value
         let Species = document.querySelector('.addanimalSpecies').value
         console.debug(`The ${name} has ${Species} Species`)
-        farmdb.insert({
+        Animals.insert({
             'name':name,
             'Species' : Species
             
