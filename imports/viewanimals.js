@@ -6,17 +6,17 @@ Template.viewanimals.helpers({
 
 Template.viewanimals.events({
     'click .js-edit'(){
-        console.warn("Your are editing", this)
-        document.querySelector(".editAnimalname").value = this.name
-        document.querySelector(".editAnimalspecies").value = this.species
         document.querySelector(".editID").value = this._id
-
+        document.querySelector(".editAnimalspecies").value = this.species
+        document.querySelector(".editAnimalname").value = this.name
+       
+        
         $('#editModal').modal('show')
 
 
     },
     'click .js-delete'(){
-        console.log('deleting',this._id)
+        console.warn('deleting',this._id)
         Animals.remove({"_id":this._id})
     }
 })

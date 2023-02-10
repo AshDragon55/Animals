@@ -3,10 +3,10 @@ Template.editAnimal.events({
         
         let eID=document.querySelector(".editID").value
         let name=document.querySelector(".editAnimalName").value
-        let species=document.querySelector(".editAnimalSpecies").value
+        let species=document.querySelector(".editAnimalspecies").value
         console.info("saving edits", eID)
         Animals.update(
-            {_id:eID},
+            {_id: eID},
             {$set:{
                 'name': name,
                 'species': species 
