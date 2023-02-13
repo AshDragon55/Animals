@@ -7,13 +7,16 @@ Template.addAnimal.events({
         // console.debug(`The ${name} has ${species} species`)
         Animals.insert({
             'name': name,
-            'Species': species,
-            'image': image
+            'Species': species
             
+           
           })
         },
         'click .js-showAdd'() {
             // let addModal = document.querySelector("#addModal")
             $('#addModal').modal('show')
         }
+
+
+
     })
