@@ -4,7 +4,7 @@ Template.addAnimal.events({
         let name = document.querySelector('.addanimalName').value
         let species = document.querySelector('.addanimalSpecies').value
         let image = document.querySelector("#image").value
-        console.debug(`The ${name} has ${species} species has ${image} image` ) 
+        // console.debug(`The ${name} has ${species} species has ${image} image` ) 
         Animaldb.insert({
             'name': name,
             'Species': species,

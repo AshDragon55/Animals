@@ -10,14 +10,12 @@ Template.viewAnimals.events({
         document.querySelector(".editAnimalspecies").value = this.species
         document.querySelector(".editAnimalname").value = this.name
         document.querySelector(".editID").value = this._id
-       
-        
         $('#editModal').modal('show')
 
 
     },
     'click .js-delete'(){
         console.warn('deleting',this._id)
-        Animals.remove({"_id":this._id})
+        Animaldb.remove({"_id":this._id})
     }
 })
