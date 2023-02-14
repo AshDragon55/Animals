@@ -1,13 +1,13 @@
-Template.editanimal.events({
+Template.editAnimal.events({
     'click .js-editAnimal'() {
-        let eId = document.querySelector(".editID").value
+
+        let eID = document.querySelector(".editID").value
         let name = document.querySelector('.editAnimalName').value
         let species = document.querySelector('.editAnimalSpecies').value
-        console.info("saving edits", eId)
+        console.info("saving edits", eID)
         Animals.update(
-            { _id: eId },
-            {
-                $set: {
+            { _id: eID },
+            {$set: {
                     'name': name,
                     'Species': species
                 }

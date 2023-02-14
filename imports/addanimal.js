@@ -3,12 +3,11 @@ Template.addAnimal.events({
       console.debug("save button clicked")
         let name = document.querySelector('.addanimalName').value
         let species = document.querySelector('.addanimalSpecies').value
-        let image = document.querySelector("#image").value
-        // console.debug(`The ${name} has ${species} species`)
+        // let image = document.querySelector("#image").value
+        console.debug(`The ${name} has ${species} species`)
         Animals.insert({
             'name': name,
             'Species': species
-            
            
           })
         },
@@ -16,7 +15,4 @@ Template.addAnimal.events({
             // let addModal = document.querySelector("#addModal")
             $('#addModal').modal('show')
         }
-
-
-
     })
