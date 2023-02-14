@@ -5,7 +5,7 @@ Template.editAnimal.events({
         let name = document.querySelector('.editAnimalName').value
         let species = document.querySelector('.editAnimalSpecies').value
         console.info("saving edits", eID)
-        Animals.update(
+        Animaldb.update(
             { _id: eID },
             {$set: {
                     'name': name,

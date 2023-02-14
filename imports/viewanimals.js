@@ -1,6 +1,6 @@
 Template.viewAnimals.helpers({
     animals() {
-        return Animals.find()
+        return Animaldb.find()
     }
 })
 
