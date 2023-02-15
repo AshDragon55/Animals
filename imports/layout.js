@@ -1,9 +1,9 @@
-import './addanimal.html'
-import './addanimal.js'
+import './addAnimal.html'
+import './addAnimal.js'
 
-import './editanimal.html'
-import './editanimal.js'
+import './editAnimal.html'
+import './editAnimal.js'
 
-import './viewanimals.html'
-import './viewanimals.js'
+import './viewAnimals.html'
+import './viewAnimals.js'
 
