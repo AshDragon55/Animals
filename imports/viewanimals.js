@@ -9,6 +9,7 @@ Template.viewAnimals.events({
         console.warn("You are editing, this")
         document.querySelector(".editAnimalspecies").value = this.species
         document.querySelector(".editAnimalname").value = this.name
+        let image = document.querySelector("#image").value
         document.querySelector(".editID").value = this._id
         $('#editModal').modal('show')
 
@@ -19,3 +20,6 @@ Template.viewAnimals.events({
         Animaldb.remove({"_id":this._id})
     }
 })
+
+import * as bootstrap from 'bootstrap'
+
