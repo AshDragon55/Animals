@@ -1,6 +1,6 @@
 <template name="addAnimal">
     <div class="row justify-content-center">
-        <div class="col-xl-6">
+        <div class="button">
             <button class="btn btn-outline-primary js-showAdd">Add an Animal</button>
         </div>
     </div>
@@ -8,7 +8,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Edit Animal</h5>
+                    <h5 class="modal-title">Add Animal</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -17,13 +17,18 @@
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="nameOfAnimal">Name</span>
-                        <input type="text" class="form-control editAnimalName" aria-label="Name of animal"
+                        <input type="text" class="form-control addAnimalName" aria-label="Name of animal"
                             aria-describedby="nameOfAnimal">
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="speciesOfAnimal">Species</span>
-                        <input type="text" class="form-control editAnimalSpecies" aria-label="Species of animal "
+                        <input type="text" class="form-control addAnimalSpecies" aria-label="Species of animal "
                             aria-describedby="speciesOfAnimal">
+                    </div>
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-lg-10 text-center imgFrame overflow-hidden">
+                            <img id="animalImg" class="w-100" src="profile.jpg" alt="" width="250" height="250">
+                        </div>
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text">image</span>

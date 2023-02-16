@@ -1,7 +1,10 @@
 body {
   padding: 10px;
   font-family: sans-serif;
+  background-color: aqua !important;
+  
 }
+
 
 .icons {
   font-size: .65em;
@@ -15,3 +18,10 @@ body {
 .iconDel {
   color: red;
 }
+
+.button{
+  
+  text-align: center;
+}
+
+

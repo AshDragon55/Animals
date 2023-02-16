@@ -21,5 +21,4 @@ Template.viewAnimals.events({
     }
 })
 
-import * as bootstrap from 'bootstrap'
 

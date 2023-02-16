@@ -8,9 +8,8 @@ Template.addAnimal.events({
         // console.debug(`The ${name} has ${species} species has ${image} image` ) 
         Animaldb.insert({
             'name': name,
-            'Species': species,
+            'species': species,
             'image' : image
-           
           })
         },
         'click .js-showAdd'() {
@@ -21,7 +20,7 @@ Template.addAnimal.events({
         'input #image'() {
           const image = document.querySelector('#image')
           const imgAnimal = document.querySelector('#animalImg')
-          imgAnimal.src = image.value
+          imgAnimal.src= image.value
           console.debug(image.value)
       }
         
