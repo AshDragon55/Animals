@@ -2,10 +2,10 @@ Template.addAnimal.events({
     'click .js-saveAnimal'() {
       console.debug("save button clicked")
       
-        let name = document.querySelector('.addanimalName').value
-        let species = document.querySelector('.addanimalSpecies').value
+        let name = document.querySelector('.addAnimalName').value
+        let species = document.querySelector('.addAnimalSpecies').value
         let image = document.querySelector("#image").value
-        // console.debug(`The ${name} has ${species} species has ${image} image` ) 
+        console.debug(`The ${name} has ${species} species has ${image} image` ) 
         Animaldb.insert({
             'name': name,
             'species': species,
