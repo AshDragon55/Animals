@@ -9,7 +9,7 @@ Template.editAnimal.events({
             {
                 $set: {
                     'name': name,
-                    'Species': species
+                    'species': species
                 }
             }
         )

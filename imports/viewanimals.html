@@ -1,11 +1,22 @@
-<template name="viewAnimals">
+  <template name="viewAnimals">
     {{#each animals}}
-    <p class="fs-1">
+       <p class="fs-1">
         {{name}}
-        {{species}}
-        <img src="{{image}}">
+        <p>{{species}}</p>
+        <!-- <img src="{{image}}"> -->
+    </p>
+
+    <p class="fs-1">
+        <img src="{{image}}" width="320" height="320">
+    </p>
+
+
+    <p class="fs-1">
         <i class="fa-sharp fa-solid fa-pen-to-square js-edit"></i>
         <i class="fa-solid fa-trash js-delete"></i>
     </p>
     {{/each}}
 </template>
+ 
+
+ 
